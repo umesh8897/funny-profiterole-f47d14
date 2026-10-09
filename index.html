@@ -1,0 +1,2558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RENU MOTORS | Premium Luxury Cars</title>
+
+<style>
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#070707;
+    color:white;
+    overflow-x:hidden;
+}
+
+button,
+input,
+textarea,
+select{
+    font-family:inherit;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+
+    background:rgba(5,5,5,.94);
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(212,175,55,.25);
+}
+
+nav{
+    max-width:1400px;
+    height:105px;
+    margin:auto;
+    padding:0 35px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+
+/* =====================================================
+   LARGE RENU MOTORS LOGO
+===================================================== */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    cursor:pointer;
+}
+
+
+/* RM CIRCLE */
+
+.logo-mark{
+    width:72px;
+    height:72px;
+
+    border:2px solid #d4af37;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+
+    color:#d4af37;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:25px;
+    font-weight:bold;
+
+    letter-spacing:-2px;
+
+    box-shadow:
+        0 0 20px rgba(212,175,55,.15),
+        inset 0 0 15px rgba(212,175,55,.08);
+
+    transition:.4s;
+}
+
+
+/* INNER CIRCLE */
+
+.logo-mark::before{
+    content:"";
+
+    position:absolute;
+
+    width:57px;
+    height:57px;
+
+    border:1px solid rgba(212,175,55,.55);
+
+    border-radius:50%;
+}
+
+
+/* LOGO WORD */
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+
+/* LARGE RENU */
+
+.logo-title{
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+    letter-spacing:9px;
+
+    line-height:.9;
+
+    color:white;
+
+    transition:.3s;
+}
+
+
+/* MOTORS */
+
+.logo-subtitle{
+    margin-top:10px;
+
+    color:#d4af37;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    letter-spacing:8px;
+
+    text-align:center;
+}
+
+
+/* LOGO HOVER */
+
+.logo:hover .logo-mark{
+    transform:rotate(8deg) scale(1.05);
+
+    box-shadow:
+        0 0 30px rgba(212,175,55,.4);
+}
+
+.logo:hover .logo-title{
+    color:#d4af37;
+}
+
+
+/* NAV LINKS */
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:32px;
+}
+
+nav a{
+    color:#eee;
+    text-decoration:none;
+
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:1.5px;
+
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+
+    padding:170px 8% 90px;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,.97),
+        rgba(0,0,0,.72),
+        rgba(0,0,0,.2)
+    ),
+    url("https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=2200&q=95");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:760px;
+}
+
+.hero-label{
+    color:#d4af37;
+
+    font-family:Georgia,serif;
+
+    font-size:13px;
+
+    letter-spacing:7px;
+
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-family:Georgia,serif;
+
+    font-size:80px;
+
+    line-height:1.02;
+
+    font-weight:normal;
+
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#d4af37;
+    font-style:italic;
+}
+
+.hero p{
+    color:#ccc;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    max-width:620px;
+
+    margin-bottom:40px;
+}
+
+
+/* BUTTONS */
+
+.btn{
+    display:inline-block;
+
+    padding:16px 32px;
+
+    text-decoration:none;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    letter-spacing:1.5px;
+
+    transition:.3s;
+
+    margin-right:10px;
+}
+
+.gold-btn{
+    background:#d4af37;
+    color:#000;
+}
+
+.gold-btn:hover{
+    background:white;
+    transform:translateY(-3px);
+}
+
+.outline-btn{
+    border:1px solid #aaa;
+    color:white;
+}
+
+.outline-btn:hover{
+    border-color:#d4af37;
+    color:#d4af37;
+}
+
+
+/* =====================================================
+   SECTION HEADINGS
+===================================================== */
+
+section{
+    padding:110px 7%;
+}
+
+.heading{
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+.heading small{
+    color:#d4af37;
+
+    font-family:Georgia,serif;
+
+    font-size:11px;
+
+    letter-spacing:5px;
+}
+
+.heading h2{
+    font-family:Georgia,serif;
+
+    font-size:50px;
+
+    font-weight:normal;
+
+    margin-top:12px;
+}
+
+.heading h2 span{
+    color:#d4af37;
+    font-style:italic;
+}
+
+
+/* =====================================================
+   CAR COLLECTION
+===================================================== */
+
+.collection{
+    background:#0c0c0c;
+}
+
+.car-grid{
+    max-width:1350px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+.car-card{
+    background:#151515;
+
+    border:1px solid #282828;
+
+    overflow:hidden;
+
+    transition:.4s;
+}
+
+.car-card:hover{
+    transform:translateY(-10px);
+
+    border-color:#d4af37;
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.7);
+}
+
+.car-image{
+    height:260px;
+
+    overflow:hidden;
+
+    position:relative;
+}
+
+.car-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+}
+
+.car-card:hover .car-image img{
+    transform:scale(1.1);
+}
+
+.car-image::after{
+    content:"VIEW DETAILS";
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(0,0,0,.5);
+
+    color:white;
+
+    font-size:10px;
+
+    letter-spacing:4px;
+
+    opacity:0;
+
+    transition:.3s;
+}
+
+.car-card:hover .car-image::after{
+    opacity:1;
+}
+
+.car-info{
+    padding:28px;
+}
+
+.category{
+    color:#d4af37;
+
+    font-size:10px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+}
+
+.car-info h3{
+    font-family:Georgia,serif;
+
+    font-size:25px;
+
+    font-weight:normal;
+
+    margin:10px 0;
+}
+
+.car-info p{
+    color:#888;
+
+    font-size:13px;
+
+    line-height:1.7;
+}
+
+.car-footer{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:25px;
+}
+
+.price{
+    color:#d4af37;
+
+    font-size:20px;
+
+    font-weight:bold;
+}
+
+.details-btn{
+    background:transparent;
+
+    color:white;
+
+    border:1px solid #555;
+
+    padding:11px 17px;
+
+    cursor:pointer;
+
+    font-size:11px;
+
+    transition:.3s;
+}
+
+.details-btn:hover{
+    background:#d4af37;
+
+    color:#000;
+
+    border-color:#d4af37;
+}
+
+
+/* =====================================================
+   CAR DETAILS POPUP
+===================================================== */
+
+.modal{
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.93);
+
+    backdrop-filter:blur(15px);
+
+    display:none;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:20px;
+
+    z-index:20000;
+}
+
+.modal.show{
+    display:flex;
+}
+
+.modal-box{
+    width:1200px;
+
+    max-width:100%;
+
+    max-height:92vh;
+
+    overflow:auto;
+
+    background:#111;
+
+    border:1px solid #333;
+
+    position:relative;
+
+    animation:popup .35s ease;
+}
+
+@keyframes popup{
+
+    from{
+        opacity:0;
+        transform:translateY(30px) scale(.96);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+
+}
+
+.close-btn{
+    position:absolute;
+
+    top:20px;
+    right:20px;
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    border:1px solid #888;
+
+    background:rgba(0,0,0,.8);
+
+    color:white;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    z-index:10;
+
+    transition:.3s;
+}
+
+.close-btn:hover{
+    background:#d4af37;
+
+    color:#000;
+}
+
+.modal-grid{
+    display:grid;
+
+    grid-template-columns:1.2fr .8fr;
+}
+
+.big-car-image{
+    min-height:650px;
+
+    background:#050505;
+}
+
+.big-car-image img{
+    width:100%;
+
+    height:100%;
+
+    min-height:650px;
+
+    object-fit:cover;
+}
+
+.car-details{
+    padding:70px 42px;
+}
+
+.car-details h2{
+    font-family:Georgia,serif;
+
+    font-size:44px;
+
+    font-weight:normal;
+
+    line-height:1.1;
+
+    margin:12px 0;
+}
+
+.modal-price{
+    color:#d4af37;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+}
+
+.description{
+    color:#999;
+
+    line-height:1.8;
+
+    font-size:14px;
+
+    margin-bottom:30px;
+}
+
+
+/* =====================================================
+   SPECIFICATIONS
+===================================================== */
+
+.specifications{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+    margin-bottom:30px;
+}
+
+.spec{
+    padding:17px;
+
+    background:#191919;
+
+    border:1px solid #292929;
+}
+
+.spec span{
+    display:block;
+
+    color:#777;
+
+    font-size:9px;
+
+    letter-spacing:2px;
+
+    margin-bottom:7px;
+}
+
+.spec strong{
+    font-size:15px;
+}
+
+
+/* MODAL BUTTONS */
+
+.modal-buttons{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+}
+
+.modal-buttons button{
+    padding:14px 20px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+}
+
+.test-drive{
+    background:#d4af37;
+
+    color:#000;
+
+    border:1px solid #d4af37;
+}
+
+.test-drive:hover{
+    background:white;
+
+    border-color:white;
+}
+
+.enquiry{
+    background:transparent;
+
+    color:white;
+
+    border:1px solid #555;
+}
+
+.enquiry:hover{
+    color:#d4af37;
+
+    border-color:#d4af37;
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about{
+    max-width:1250px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:75px;
+
+    align-items:center;
+}
+
+.about-image{
+    height:520px;
+
+    overflow:hidden;
+}
+
+.about-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.about-label{
+    color:#d4af37;
+
+    font-family:Georgia,serif;
+
+    font-size:11px;
+
+    letter-spacing:5px;
+}
+
+.about h2{
+    font-family:Georgia,serif;
+
+    font-size:48px;
+
+    font-weight:normal;
+
+    line-height:1.2;
+
+    margin:15px 0 25px;
+}
+
+.about h2 span{
+    color:#d4af37;
+
+    font-style:italic;
+}
+
+.about p{
+    color:#999;
+
+    line-height:1.9;
+
+    margin-bottom:17px;
+}
+
+
+/* =====================================================
+   STATS
+===================================================== */
+
+.stats{
+    background:#d4af37;
+
+    color:#000;
+
+    padding:60px 7%;
+}
+
+.stats-grid{
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    text-align:center;
+}
+
+.stat h3{
+    font-family:Georgia,serif;
+
+    font-size:45px;
+
+    font-weight:normal;
+}
+
+.stat p{
+    font-size:11px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services{
+    background:#0c0c0c;
+}
+
+.service-grid{
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+.service{
+    background:#151515;
+
+    border:1px solid #282828;
+
+    padding:38px;
+
+    transition:.3s;
+}
+
+.service:hover{
+    border-color:#d4af37;
+
+    transform:translateY(-6px);
+}
+
+.service-icon{
+    font-size:36px;
+
+    margin-bottom:18px;
+}
+
+.service h3{
+    font-family:Georgia,serif;
+
+    font-size:20px;
+
+    font-weight:normal;
+
+    margin-bottom:12px;
+}
+
+.service p{
+    color:#888;
+
+    font-size:13px;
+
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact{
+    max-width:1150px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:65px;
+}
+
+.contact-label{
+    color:#d4af37;
+
+    font-family:Georgia,serif;
+
+    font-size:11px;
+
+    letter-spacing:5px;
+}
+
+.contact h2{
+    font-family:Georgia,serif;
+
+    font-size:47px;
+
+    font-weight:normal;
+
+    margin:15px 0 20px;
+}
+
+.contact h2 span{
+    color:#d4af37;
+
+    font-style:italic;
+}
+
+.contact p{
+    color:#888;
+
+    line-height:1.8;
+}
+
+.contact-details{
+    margin-top:25px;
+
+    line-height:2;
+
+    color:#aaa;
+}
+
+.contact-details strong{
+    color:#d4af37;
+}
+
+form{
+    background:#121212;
+
+    border:1px solid #282828;
+
+    padding:35px;
+}
+
+form input,
+form textarea,
+form select{
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    background:#080808;
+
+    border:1px solid #333;
+
+    color:white;
+
+    outline:none;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus{
+    border-color:#d4af37;
+}
+
+form textarea{
+    height:120px;
+
+    resize:none;
+}
+
+form button{
+    width:100%;
+
+    padding:16px;
+
+    background:#d4af37;
+
+    color:#000;
+
+    border:0;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+}
+
+form button:hover{
+    background:white;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+    background:#050505;
+
+    border-top:1px solid #222;
+
+    text-align:center;
+
+    padding:45px 20px;
+
+    color:#666;
+
+    font-size:12px;
+
+    letter-spacing:1px;
+}
+
+footer strong{
+    color:#d4af37;
+
+    font-family:Georgia,serif;
+
+    font-size:22px;
+
+    letter-spacing:5px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1000px){
+
+    nav ul{
+        display:none;
+    }
+
+    .car-grid,
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .modal-grid{
+        grid-template-columns:1fr;
+    }
+
+    .big-car-image,
+    .big-car-image img{
+        min-height:420px;
+
+        height:420px;
+    }
+
+    .about,
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:60px;
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    nav{
+        height:85px;
+
+        padding:0 18px;
+    }
+
+    .logo{
+        gap:10px;
+    }
+
+    .logo-mark{
+        width:52px;
+        height:52px;
+
+        font-size:19px;
+    }
+
+    .logo-mark::before{
+        width:40px;
+        height:40px;
+    }
+
+    .logo-title{
+        font-size:27px;
+
+        letter-spacing:6px;
+    }
+
+    .logo-subtitle{
+        font-size:8px;
+
+        letter-spacing:5px;
+
+        margin-top:7px;
+    }
+
+    .hero{
+        padding:130px 6% 70px;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    section{
+        padding:75px 6%;
+    }
+
+    .heading h2{
+        font-size:35px;
+    }
+
+    .car-grid,
+    .service-grid,
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about h2,
+    .contact h2{
+        font-size:35px;
+    }
+
+    .modal{
+        padding:7px;
+    }
+
+    .big-car-image,
+    .big-car-image img{
+        min-height:270px;
+
+        height:270px;
+    }
+
+    .car-details{
+        padding:35px 25px;
+    }
+
+    .car-details h2{
+        font-size:32px;
+    }
+
+    .modal-price{
+        font-size:24px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+<nav>
+
+
+<!-- LARGE LOGO -->
+
+<div class="logo">
+
+    <div class="logo-mark">
+        RM
+    </div>
+
+    <div class="logo-text">
+
+        <div class="logo-title">
+            RENU
+        </div>
+
+        <div class="logo-subtitle">
+            MOTORS
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<ul>
+
+<li>
+<a href="#home">HOME</a>
+</li>
+
+<li>
+<a href="#collection">CARS</a>
+</li>
+
+<li>
+<a href="#about">ABOUT</a>
+</li>
+
+<li>
+<a href="#services">SERVICES</a>
+</li>
+
+<li>
+<a href="#contact">CONTACT</a>
+</li>
+
+</ul>
+
+
+</nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="hero-label">
+RENU MOTORS • PREMIUM AUTOMOBILES
+</div>
+
+<h1>
+Where Luxury
+<span>Drives.</span>
+</h1>
+
+<p>
+Discover an exclusive collection of premium luxury
+and performance automobiles. At Renu Motors,
+every journey begins with extraordinary design,
+power and craftsmanship.
+</p>
+
+<a href="#collection" class="btn gold-btn">
+EXPLORE COLLECTION
+</a>
+
+<a href="#contact" class="btn outline-btn">
+BOOK TEST DRIVE
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     COLLECTION
+===================================================== -->
+
+<section class="collection" id="collection">
+
+<div class="heading">
+
+<small>
+THE RENU COLLECTION
+</small>
+
+<h2>
+Premium <span>Automobiles</span>
+</h2>
+
+</div>
+
+
+<div class="car-grid">
+
+
+<!-- CAR 1 -->
+
+<div class="car-card">
+
+<div class="car-image">
+
+<img src="https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=1800&q=95">
+
+</div>
+
+<div class="car-info">
+
+<span class="category">
+ITALIAN SUPERCAR
+</span>
+
+<h3>
+Lamborghini Huracán
+</h3>
+
+<p>
+Italian craftsmanship, dramatic styling
+and breathtaking performance.
+</p>
+
+<div class="car-footer">
+
+<div class="price">
+₹4.00 Cr
+</div>
+
+<button
+class="details-btn"
+onclick="openCar(0)">
+VIEW DETAILS
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CAR 2 -->
+
+<div class="car-card">
+
+<div class="car-image">
+
+<img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1800&q=95">
+
+</div>
+
+<div class="car-info">
+
+<span class="category">
+LUXURY PERFORMANCE
+</span>
+
+<h3>
+BMW M8 Competition
+</h3>
+
+<p>
+Sophisticated luxury combined with
+powerful BMW M engineering.
+</p>
+
+<div class="car-footer">
+
+<div class="price">
+₹2.44 Cr
+</div>
+
+<button
+class="details-btn"
+onclick="openCar(1)">
+VIEW DETAILS
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CAR 3 -->
+
+<div class="car-card">
+
+<div class="car-image">
+
+<img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=1800&q=95">
+
+</div>
+
+<div class="car-info">
+
+<span class="category">
+GERMAN SPORTS CAR
+</span>
+
+<h3>
+Porsche 911 Turbo S
+</h3>
+
+<p>
+Iconic Porsche engineering with
+exceptional speed and precision.
+</p>
+
+<div class="car-footer">
+
+<div class="price">
+₹3.35 Cr
+</div>
+
+<button
+class="details-btn"
+onclick="openCar(2)">
+VIEW DETAILS
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CAR 4 -->
+
+<div class="car-card">
+
+<div class="car-image">
+
+<img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1800&q=95">
+
+</div>
+
+<div class="car-info">
+
+<span class="category">
+PERFORMANCE LUXURY
+</span>
+
+<h3>
+Mercedes AMG GT
+</h3>
+
+<p>
+Elegant Mercedes design combined
+with powerful AMG performance.
+</p>
+
+<div class="car-footer">
+
+<div class="price">
+₹3.00 Cr
+</div>
+
+<button
+class="details-btn"
+onclick="openCar(3)">
+VIEW DETAILS
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CAR 5 -->
+
+<div class="car-card">
+
+<div class="car-image">
+
+<img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1800&q=95">
+
+</div>
+
+<div class="car-info">
+
+<span class="category">
+GERMAN SUPERCAR
+</span>
+
+<h3>
+Audi R8 V10
+</h3>
+
+<p>
+Naturally aspirated V10 power with
+unmistakable Audi design.
+</p>
+
+<div class="car-footer">
+
+<div class="price">
+₹2.72 Cr
+</div>
+
+<button
+class="details-btn"
+onclick="openCar(4)">
+VIEW DETAILS
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CAR 6 -->
+
+<div class="car-card">
+
+<div class="car-image">
+
+<img src="https://images.unsplash.com/photo-1621135802920-133df287f89c?auto=format&fit=crop&w=1800&q=95">
+
+</div>
+
+<div class="car-info">
+
+<span class="category">
+BRITISH GRAND TOURER
+</span>
+
+<h3>
+Bentley Continental GT
+</h3>
+
+<p>
+Handcrafted British luxury with
+effortless performance.
+</p>
+
+<div class="car-footer">
+
+<div class="price">
+₹5.23 Cr
+</div>
+
+<button
+class="details-btn"
+onclick="openCar(5)">
+VIEW DETAILS
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CAR DETAILS MODAL
+===================================================== -->
+
+<div class="modal" id="carModal">
+
+<div class="modal-box">
+
+
+<button
+class="close-btn"
+onclick="closeCar()">
+×
+</button>
+
+
+<div class="modal-grid">
+
+
+<!-- BIG IMAGE -->
+
+<div class="big-car-image">
+
+<img
+id="modalImage"
+src=""
+alt="Luxury Car">
+
+</div>
+
+
+<!-- DETAILS -->
+
+<div class="car-details">
+
+<span
+class="category"
+id="modalCategory">
+</span>
+
+<h2 id="modalName">
+Car Name
+</h2>
+
+<div
+class="modal-price"
+id="modalPrice">
+</div>
+
+<p
+class="description"
+id="modalDescription">
+</p>
+
+
+<!-- SPECIFICATIONS -->
+
+<div class="specifications">
+
+
+<div class="spec">
+
+<span>
+ENGINE
+</span>
+
+<strong id="engine">
+-
+</strong>
+
+</div>
+
+
+<div class="spec">
+
+<span>
+POWER
+</span>
+
+<strong id="power">
+-
+</strong>
+
+</div>
+
+
+<div class="spec">
+
+<span>
+0-100 KM/H
+</span>
+
+<strong id="acceleration">
+-
+</strong>
+
+</div>
+
+
+<div class="spec">
+
+<span>
+TOP SPEED
+</span>
+
+<strong id="speed">
+-
+</strong>
+
+</div>
+
+
+<div class="spec">
+
+<span>
+TRANSMISSION
+</span>
+
+<strong id="transmission">
+-
+</strong>
+
+</div>
+
+
+<div class="spec">
+
+<span>
+FUEL
+</span>
+
+<strong id="fuel">
+-
+</strong>
+
+</div>
+
+
+</div>
+
+
+<!-- BUTTONS -->
+
+<div class="modal-buttons">
+
+<button
+class="test-drive"
+onclick="bookTestDrive()">
+
+🔑 BOOK TEST DRIVE
+
+</button>
+
+<button
+class="enquiry"
+onclick="goToContact()">
+
+📩 ENQUIRE NOW
+
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about">
+
+<div class="about">
+
+
+<div class="about-image">
+
+<img
+src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1800&q=95">
+
+</div>
+
+
+<div>
+
+<div class="about-label">
+THE RENU MOTORS EXPERIENCE
+</div>
+
+<h2>
+Luxury Is A
+<span>Statement.</span>
+</h2>
+
+<p>
+Renu Motors is a premium destination for
+luxury, performance and exotic automobiles.
+</p>
+
+<p>
+We carefully select extraordinary vehicles
+for their design, technology, engineering
+and craftsmanship.
+</p>
+
+<p>
+Our goal is to provide every customer with
+a sophisticated automotive experience from
+the showroom to delivery.
+</p>
+
+<a
+href="#contact"
+class="btn gold-btn">
+
+VISIT RENU MOTORS
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="stats">
+
+<div class="stats-grid">
+
+
+<div class="stat">
+
+<h3>
+150+
+</h3>
+
+<p>
+Luxury Cars
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<h3>
+25+
+</h3>
+
+<p>
+Premium Brands
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<h3>
+2K+
+</h3>
+
+<p>
+Happy Clients
+</p>
+
+</div>
+
+
+<div class="stat">
+
+<h3>
+12+
+</h3>
+
+<p>
+Years Excellence
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section
+class="services"
+id="services">
+
+<div class="heading">
+
+<small>
+THE RENU EXPERIENCE
+</small>
+
+<h2>
+Premium <span>Services</span>
+</h2>
+
+</div>
+
+
+<div class="service-grid">
+
+
+<div class="service">
+
+<div class="service-icon">
+🚘
+</div>
+
+<h3>
+Luxury Car Sales
+</h3>
+
+<p>
+Explore our exclusive collection of
+premium and exotic automobiles.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🔑
+</div>
+
+<h3>
+Private Test Drive
+</h3>
+
+<p>
+Experience your dream car with a
+personalized private test drive.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🛡️
+</div>
+
+<h3>
+Premium Warranty
+</h3>
+
+<p>
+Comprehensive inspection and
+premium warranty solutions.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+💰
+</div>
+
+<h3>
+Luxury Finance
+</h3>
+
+<p>
+Flexible financing options designed
+around your requirements.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🔄
+</div>
+
+<h3>
+Vehicle Exchange
+</h3>
+
+<p>
+Upgrade your current vehicle with
+our premium exchange service.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+⭐
+</div>
+
+<h3>
+VIP Delivery
+</h3>
+
+<p>
+Enjoy an unforgettable premium
+vehicle delivery experience.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact">
+
+<div class="contact">
+
+
+<div>
+
+<div class="contact-label">
+CONNECT WITH RENU MOTORS
+</div>
+
+<h2>
+Your Dream Car
+<span>Awaits.</span>
+</h2>
+
+<p>
+Speak with our automobile specialists
+to arrange a private showroom visit
+or exclusive test drive.
+</p>
+
+
+<div class="contact-details">
+
+<strong>
+📍 SHOWROOM
+</strong>
+
+<br>
+
+Hyderabad, Telangana, India
+
+
+<br><br>
+
+
+<strong>
+📞 PHONE
+</strong>
+
+<br>
+
++91 98765 43210
+
+
+<br><br>
+
+
+<strong>
+✉ EMAIL
+</strong>
+
+<br>
+
+sales@renumotors.com
+
+
+<br><br>
+
+
+<strong>
+🕒 OPENING HOURS
+</strong>
+
+<br>
+
+Monday - Sunday: 9:00 AM - 8:00 PM
+
+</div>
+
+</div>
+
+
+
+<form
+onsubmit="submitForm(event)">
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+placeholder="Phone Number"
+required>
+
+<select required>
+
+<option value="">
+Select Your Automobile
+</option>
+
+<option>
+Lamborghini Huracán
+</option>
+
+<option>
+BMW M8 Competition
+</option>
+
+<option>
+Porsche 911 Turbo S
+</option>
+
+<option>
+Mercedes AMG GT
+</option>
+
+<option>
+Audi R8 V10
+</option>
+
+<option>
+Bentley Continental GT
+</option>
+
+</select>
+
+<textarea
+placeholder="Your Message">
+</textarea>
+
+<button type="submit">
+SEND ENQUIRY
+</button>
+
+</form>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<strong>
+RENU MOTORS
+</strong>
+
+<br><br>
+
+PREMIUM • LUXURY • PERFORMANCE
+
+<br><br>
+
+© 2026 Renu Motors. All Rights Reserved.
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/* =====================================================
+   CAR DATABASE
+===================================================== */
+
+const cars = [
+
+{
+    name:"Lamborghini Huracán",
+
+    category:"Italian Supercar",
+
+    price:"₹4.00 Cr",
+
+    image:
+    "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=2000&q=95",
+
+    description:
+    "Experience Italian automotive excellence with dramatic styling, a powerful V10 engine and precision engineering.",
+
+    engine:"5.2L V10",
+
+    power:"610 HP",
+
+    acceleration:"3.2 Seconds",
+
+    speed:"325 KM/H",
+
+    transmission:"7-Speed DCT",
+
+    fuel:"Petrol"
+},
+
+
+{
+    name:"BMW M8 Competition",
+
+    category:"Luxury Performance",
+
+    price:"₹2.44 Cr",
+
+    image:
+    "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=2000&q=95",
+
+    description:
+    "The BMW M8 Competition combines sophisticated luxury with powerful M performance and advanced technology.",
+
+    engine:"4.4L V8 Twin Turbo",
+
+    power:"625 HP",
+
+    acceleration:"3.2 Seconds",
+
+    speed:"305 KM/H",
+
+    transmission:"8-Speed Automatic",
+
+    fuel:"Petrol"
+},
+
+
+{
+    name:"Porsche 911 Turbo S",
+
+    category:"German Sports Car",
+
+    price:"₹3.35 Cr",
+
+    image:
+    "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=2000&q=95",
+
+    description:
+    "An iconic Porsche sports car offering extraordinary acceleration, precise handling and legendary design.",
+
+    engine:"3.7L Twin Turbo Flat-6",
+
+    power:"650 HP",
+
+    acceleration:"2.7 Seconds",
+
+    speed:"330 KM/H",
+
+    transmission:"8-Speed PDK",
+
+    fuel:"Petrol"
+},
+
+
+{
+    name:"Mercedes AMG GT",
+
+    category:"Performance Luxury",
+
+    price:"₹3.00 Cr",
+
+    image:
+    "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=2000&q=95",
+
+    description:
+    "A sophisticated AMG grand tourer combining elegant design with exhilarating performance.",
+
+    engine:"4.0L V8 Biturbo",
+
+    power:"585 HP",
+
+    acceleration:"3.2 Seconds",
+
+    speed:"315 KM/H",
+
+    transmission:"9-Speed Automatic",
+
+    fuel:"Petrol"
+},
+
+
+{
+    name:"Audi R8 V10",
+
+    category:"German Supercar",
+
+    price:"₹2.72 Cr",
+
+    image:
+    "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=2000&q=95",
+
+    description:
+    "A naturally aspirated V10 supercar combining breathtaking performance with distinctive Audi design.",
+
+    engine:"5.2L V10",
+
+    power:"620 HP",
+
+    acceleration:"3.1 Seconds",
+
+    speed:"331 KM/H",
+
+    transmission:"7-Speed S-Tronic",
+
+    fuel:"Petrol"
+},
+
+
+{
+    name:"Bentley Continental GT",
+
+    category:"British Grand Tourer",
+
+    price:"₹5.23 Cr",
+
+    image:
+    "https://images.unsplash.com/photo-1621135802920-133df287f89c?auto=format&fit=crop&w=2000&q=95",
+
+    description:
+    "Handcrafted British luxury combined with effortless performance and extraordinary grand touring comfort.",
+
+    engine:"6.0L W12",
+
+    power:"659 HP",
+
+    acceleration:"3.6 Seconds",
+
+    speed:"335 KM/H",
+
+    transmission:"8-Speed Dual Clutch",
+
+    fuel:"Petrol"
+}
+
+];
+
+
+/* =====================================================
+   OPEN CAR DETAILS
+===================================================== */
+
+function openCar(index){
+
+    const car = cars[index];
+
+    document.getElementById("modalImage").src =
+        car.image;
+
+    document.getElementById("modalCategory").textContent =
+        car.category;
+
+    document.getElementById("modalName").textContent =
+        car.name;
+
+    document.getElementById("modalPrice").textContent =
+        car.price;
+
+    document.getElementById("modalDescription").textContent =
+        car.description;
+
+    document.getElementById("engine").textContent =
+        car.engine;
+
+    document.getElementById("power").textContent =
+        car.power;
+
+    document.getElementById("acceleration").textContent =
+        car.acceleration;
+
+    document.getElementById("speed").textContent =
+        car.speed;
+
+    document.getElementById("transmission").textContent =
+        car.transmission;
+
+    document.getElementById("fuel").textContent =
+        car.fuel;
+
+    document.getElementById("carModal")
+        .classList.add("show");
+
+    document.body.style.overflow="hidden";
+}
+
+
+/* =====================================================
+   CLOSE CAR DETAILS
+===================================================== */
+
+function closeCar(){
+
+    document.getElementById("carModal")
+        .classList.remove("show");
+
+    document.body.style.overflow="auto";
+}
+
+
+/* =====================================================
+   CLICK OUTSIDE MODAL
+===================================================== */
+
+document.getElementById("carModal")
+.addEventListener("click",function(event){
+
+    if(event.target === this){
+
+        closeCar();
+
+    }
+
+});
+
+
+/* =====================================================
+   ESC KEY
+===================================================== */
+
+document.addEventListener("keydown",function(event){
+
+    if(event.key === "Escape"){
+
+        closeCar();
+
+    }
+
+});
+
+
+/* =====================================================
+   BOOK TEST DRIVE
+===================================================== */
+
+function bookTestDrive(){
+
+    closeCar();
+
+    document
+        .getElementById("contact")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+    setTimeout(function(){
+
+        alert(
+            "Welcome to Renu Motors!\n\nPlease complete the enquiry form to book your private test drive."
+        );
+
+    },500);
+}
+
+
+/* =====================================================
+   ENQUIRE NOW
+===================================================== */
+
+function goToContact(){
+
+    closeCar();
+
+    document
+        .getElementById("contact")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+}
+
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+function submitForm(event){
+
+    event.preventDefault();
+
+    alert(
+        "Thank you for contacting Renu Motors!\n\nOur luxury automobile specialist will contact you shortly."
+    );
+
+    event.target.reset();
+}
+
+</script>
+
+</body>
+</html>
